@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:background="@drawable/login_background">
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/edittext_shape"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:hint="Email Address"
+        android:textColorHint="#95999999"
+        />
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/edittext_shape"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#95999999"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/ck_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ed_password"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape_transparent"
+        android:layout_below="@id/ck_remember"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="24sp"
+        android:textColor="#cccccc"
+        android:background="@drawable/shape_transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

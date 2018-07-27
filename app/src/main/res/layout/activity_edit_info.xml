@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="修改个人信息"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_edit"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="用户名："
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/ed_edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tv_edit_username"
+        android:padding="8dp"
+        android:text="username"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_edit_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_edit_username"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="性别："
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tv_edit_gender"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="女"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rb_pirvate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:checked="true"
+            android:text="不公开"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_edit_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_edit_gender"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="出生日期："
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_edit_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tv_edit_birthday"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:text="选择日期"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_edit_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_edit_birthday"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="个人简介："
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/ed_edit_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tv_edit_introduce"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_shape"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/bt_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_shape"
+        android:text="取消" />
+
+</RelativeLayout>

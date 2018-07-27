@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GuideActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/indicator"
+        android:layout_above="@id/bt_fxxkoff"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:stpi_stepCount="5"/>
+
+    <Button
+        android:id="@+id/bt_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择原谅"
+        android:textSize="24sp"
+        android:background="@drawable/btn_shape"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_fxxkoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出应用"
+        android:textSize="24sp"
+        android:background="@drawable/btn_shape"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+</RelativeLayout>

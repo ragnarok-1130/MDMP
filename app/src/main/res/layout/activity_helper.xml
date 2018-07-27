@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpActivity"
+    android:background="#f3f3f3">
+    
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Material Music Player"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#536dfe"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_welcome"
+        android:text="本软件需要读取您的储存以获取歌曲列表，请在接下来弹出的窗口中点击允许以授权。"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_tip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Next"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="280dp"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        app:srcCompat="@drawable/example" />
+
+</RelativeLayout>

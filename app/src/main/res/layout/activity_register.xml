@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:background="@drawable/login_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/head"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/ed_reg_email"
+        android:layout_below="@id/civ_head"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/edittext_shape"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:hint="Email Address"
+        android:textColorHint="#95999999"
+        />
+
+    <EditText
+        android:id="@+id/ed_reg_username"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/ed_reg_email"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape"
+        android:textColor="#ffffff"
+        android:inputType="text"
+        android:padding="20dp"
+        android:hint="Username"
+        android:textColorHint="#95999999"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/ed_reg_username"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#95999999"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/ed_reg_password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape"
+        android:textColor="#ffffff"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="#95999999"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_reg_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape_transparent"
+        android:layout_above="@id/bt_reg_login"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_reg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="24sp"
+        android:textColor="#cccccc"
+        android:background="@drawable/shape_transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
